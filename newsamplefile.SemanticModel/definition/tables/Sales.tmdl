@@ -23,7 +23,7 @@ table Sales
 		dataType: int64
 		formatString: 0
 		lineageTag: 5637c180-90e7-42db-9f3a-8e2c48d0b7c3
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: CustomerKey
 
 		annotation SummarizationSetBy = Automatic
@@ -32,7 +32,7 @@ table Sales
 		dataType: int64
 		formatString: 0
 		lineageTag: 676af70a-982c-40a9-948c-c2261888ef0d
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: ProductKey
 
 		annotation SummarizationSetBy = Automatic

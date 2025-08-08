@@ -1,8 +1,0 @@
-relationship AutoDetected_edf4ef3a-198e-4e60-8cd1-620d0e4f9fd1
-	fromColumn: Sales.CustomerKey
-	toColumn: Customer.CustomerKey
-
-relationship AutoDetected_c141bc59-961e-4940-9889-3b0b29651753
-	fromColumn: Sales.ProductKey
-	toColumn: Product.ProductKey
-

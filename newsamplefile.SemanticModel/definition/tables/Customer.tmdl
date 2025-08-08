@@ -5,7 +5,7 @@ table Customer
 		dataType: int64
 		formatString: 0
 		lineageTag: e7585dbe-29e1-4456-814f-1a0963aebdc6
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: CustomerKey
 
 		annotation SummarizationSetBy = Automatic

@@ -5,7 +5,7 @@ table Product
 		dataType: int64
 		formatString: 0
 		lineageTag: c1c9da68-7874-4319-bec9-4840e76fba3e
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: ProductKey
 
 		annotation SummarizationSetBy = Automatic
@@ -29,7 +29,7 @@ table Product
 	column 'Standard Cost'
 		dataType: double
 		lineageTag: 239d7bf1-8097-4e94-a2fb-52c5290a044b
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Standard Cost
 
 		annotation SummarizationSetBy = Automatic
@@ -47,7 +47,7 @@ table Product
 	column 'List Price'
 		dataType: double
 		lineageTag: 573d1f94-25ff-4e16-ab7a-be4bb6e3aed5
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: List Price
 
 		annotation SummarizationSetBy = Automatic
