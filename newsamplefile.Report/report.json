@@ -34,6 +34,15 @@
           "x": 43.68,
           "y": 21.84,
           "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"670d859a445099d000d5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":713,\"y\":22,\"width\":567,\"height\":669,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Product.Category\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Product.Category)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}},\"Function\":5},\"Name\":\"CountNonNull(Product.Category)\",\"NativeReferenceName\":\"Count of Category\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 669.00,
+          "width": 567.00,
+          "x": 713.00,
+          "y": 22.00,
+          "z": 1.00
         }
       ],
       "width": 1280.00
