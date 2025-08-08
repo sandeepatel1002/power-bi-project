@@ -34,15 +34,6 @@
           "x": 43.68,
           "y": 21.84,
           "z": 0.00
-        },
-        {
-          "config": "{\"name\":\"b323cc1733b0cea43830\",\"layouts\":[{\"id\":0,\"position\":{\"x\":713,\"y\":22,\"width\":567,\"height\":669,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Values\":[{\"queryRef\":\"CountNonNull(Customer.Country-Region)\"}],\"Group\":[{\"queryRef\":\"Customer.Country-Region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Customer\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country-Region\"}},\"Function\":5},\"Name\":\"CountNonNull(Customer.Country-Region)\",\"NativeReferenceName\":\"Country-Region\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Country-Region\"},\"Name\":\"Customer.Country-Region\",\"NativeReferenceName\":\"Country-Region1\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
-          "height": 669.00,
-          "width": 567.00,
-          "x": 713.00,
-          "y": 22.00,
-          "z": 1000.00
         }
       ],
       "width": 1280.00
