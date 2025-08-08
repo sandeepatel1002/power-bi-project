@@ -1,0 +1,72 @@
+table Customer
+	lineageTag: df999019-eee9-42e6-8979-5bfb7f4b2eb1
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: e7585dbe-29e1-4456-814f-1a0963aebdc6
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: f05e437a-91da-4ee6-8bb4-bbaad1992d78
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer
+		dataType: string
+		lineageTag: 2484aec7-3f0a-4d86-b3cf-7981a356116b
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 49a67d10-f714-4458-bdba-51a8c28065e6
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column State-Province
+		dataType: string
+		lineageTag: de9f2327-8b9e-4551-8fb7-c73f155a2b66
+		summarizeBy: none
+		sourceColumn: State-Province
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country-Region
+		dataType: string
+		lineageTag: 013100aa-cb45-4108-86e4-267f184c9795
+		summarizeBy: none
+		sourceColumn: Country-Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Postal Code'
+		dataType: string
+		lineageTag: e34bdf5a-b52b-4998-8b3d-7ab35a5f326a
+		summarizeBy: none
+		sourceColumn: Postal Code
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(Web.Contents("https://fiftyfivetechio.sharepoint.com/sites/mysite/Shared%20Documents/AdventureWorks%20Sales.xlsx"), null, true),
+				    Customer_Table = Source{[Item="Customer",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(Customer_Table,{{"CustomerKey", Int64.Type}, {"Customer ID", type text}, {"Customer", type text}, {"City", type text}, {"State-Province", type text}, {"Country-Region", type text}, {"Postal Code", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
